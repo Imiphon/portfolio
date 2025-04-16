@@ -1,0 +1,24 @@
+@import './../../styles.scss';
+
+.main-frame {
+    @include dFlex($jc:flex-start);
+    width: 100%;
+    //background-color: #FFFCF3;
+    overflow: hidden;
+}
+
+.components-frame {
+    @include dFlex($jc:flex-start);
+    //max-width: 1440px;
+    //background-color: #FFFCF3;
+    overflow: hidden;
+    scrollbar-width: none; 
+}
+
+.triangle {
+    left: 0;
+    width: 100vw;
+    //max-width: 1440px;
+    height: 16vw; //230px;    
+    background-image: linear-gradient(to bottom left, transparent 50%, black 50%);
+}

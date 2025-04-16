@@ -1,0 +1,66 @@
+@import './../../styles.scss';
+
+
+.header-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    @include dFlex();
+    z-index: 20;
+    background-color: #FFFCF3;
+}
+
+.header-cont {
+    @include dFlex($jc: space-between, $fd: row);    
+    background-color: #FFFCF3;
+    width: 100%;
+    max-width: 1440px;
+    height: 80px;
+    font-weight: 800;
+    font-size: larger;        
+    @media (max-width:1440px) {
+        width: 100vw;
+    }
+}
+
+.logo {
+    width: auto;
+    height: 40px;
+    padding-left: 32px;
+    @media (min-width: 1440px) {
+        padding-left: 0;
+    }
+}
+
+.burger-frame {
+    margin-right: 32px;
+    cursor: pointer;
+
+    img {
+        max-width: 32px;
+        height: auto;
+    }
+}
+
+.burger-menu {
+    width: 100%;
+}
+
+.item-style {
+    line-height: 8px;
+    padding: 10px 16px;
+    margin: 0;
+}
+
+.item-style,
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(117, 116, 116) !important;
+    }
+}

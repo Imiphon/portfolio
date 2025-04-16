@@ -1,0 +1,278 @@
+@import './../../styles.scss';
+
+.portfolio-frame {
+    scroll-margin-top: 80px;
+    @include dFlex();
+    max-width: 100%;
+    width: 100%; //88vw;
+    height: auto;
+    margin-bottom: 32px;
+
+    @media (max-width:375px) {
+        flex-direction: column;
+    }
+}
+
+.sub-title {
+    @include subTitle();
+    margin-bottom: 2px;
+}
+
+.subtext-frame {
+    @include dFlex();
+    margin-top: 23px;
+    margin-bottom: 80px;
+    width: min-content; //525px;
+
+    p {
+        margin: 12px 0 !important;
+    }
+}
+
+.examples-frame {
+    @include dFlex();
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 32px;
+}
+
+.img-text-frame {
+    position: relative;
+    @include dFlex($fd: row, $jc: space-between);
+    width: 90%;
+    margin-bottom: 64px;
+
+    a {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .count,
+    .count-right {
+        @include dFlex($jc: flex-start, $ai: start);
+        max-height: 32vw;
+        font-size: 48px;
+
+        p {
+            margin: 12px 0 !important;
+        }
+    }
+
+    @media (max-width:740px) {
+        flex-direction: column;
+
+        .count-descript-frame,
+        .count,
+        .count-right,
+        a {
+            width: 100%;
+        }
+
+        .count,
+        .count-right {
+            align-items: center !important;
+        }
+    }
+}
+
+.colored {
+    display: none;
+    @media (max-width:1040px) {
+        display: inline;
+    }
+}
+.uncolored {
+    @media (max-width:1040px) {
+        display: none;
+    };
+}
+
+.ios {
+    .colored {
+        display: none !important;
+    }
+
+    .uncolored {
+        display: block !important;
+    }
+}
+
+.rec-frame {
+    position: relative;
+}
+
+.rectangle {
+    border: 2px solid transparent;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none; //no cursor-reaction
+    transition: all 0.3s ease;
+    top: 8px;
+    left: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.rect-left {
+    left: -8px !important;
+}
+
+.dot {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-color: transparent; //black;
+    border-radius: 50%;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s linear;
+    @include dFlex();
+    
+}
+.l {left: 0 !important;}
+
+.arrow {
+    width: 70% !important;
+    visibility: hidden;
+}
+
+// hover-animation for images
+.pic-change {
+    @media (min-width:1140px) {
+        &:hover {
+            .uncolored {
+                display: none;
+            }        
+            .colored {
+                display: inline;
+            }
+            .dot {
+                background-color: black;
+            }
+            .rectangle {
+                border-color: black;
+            }
+            .arrow {
+                visibility: visible;
+                animation: 0.8s turnArrowR cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            }
+            .desc-l,
+            .desc-r{ opacity: 1;}
+        }
+    }
+}
+
+@keyframes turnArrowR {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.count-right {
+    align-items: end !important;
+}
+
+.count-descript-frame {
+    width: 50%;
+}
+
+.desc-r {
+    margin: 12px 0 0 32px;
+    text-align: right;
+    @media (min-width:1140px) {
+        opacity: 0;
+    }
+    @media (max-width:740px) {
+        text-align: left;
+        margin: 12px 0;
+    }
+}
+
+.desc-l {
+    margin-top: 12px;
+    @media (min-width:1140px) {
+        opacity: 0;
+    }
+}
+
+
+.right {
+    align-items: start;
+
+    @media (max-width:740px) {
+        align-items: center;
+        flex-direction: column-reverse !important;
+    }
+}
+
+.left {
+    align-items: start;
+
+    @media (max-width:740px) {
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+.text {
+    height: auto;
+    font-size: 23px;
+    line-height: 27.6px;
+    @media (max-width:1440px) {
+        font-size: 1.6vw;
+        line-height: 1.92vw;
+    }
+
+    @media (max-width:800px) {
+        font-size: 12px;
+        line-height: 12.5px;
+    }
+}
+
+.arrow-frame {
+    @include dFlex($ai: flex-end);
+    width: 100%;
+    max-width: 1440px;
+    padding-right: 56px;
+
+    @media (max-width:375px) {
+        align-items: center;
+        padding-right: 0;
+    }
+}
+
+.arrow-left-down {
+    position: relative;
+    top: 32px;
+
+    @media (max-width:375px) {
+        margin-bottom: 32px;
+    }
+
+    &:hover {
+        animation: upAndDown 1s infinite forwards;
+    }
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(32px) translateX(-32px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}

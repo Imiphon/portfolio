@@ -1,0 +1,18 @@
+
+<div class="main-frame">    
+<div class="components-frame">  
+    <app-header (togglePrivacyPolicyEvent)="togglePrivacyPolicy()" (toggleNavigationEvent)="toggleNavigation()"></app-header>
+    <app-navigation *ngIf="showNavigation" (closeEvent)="toggleNavigation()"></app-navigation>
+    <app-coding-home></app-coding-home>
+    <app-about-me></app-about-me>
+    <app-my-skills></app-my-skills>
+    <app-portfolio></app-portfolio>
+    <div class="triangle" id="helloContact" ></div>
+    <app-contact (togglePrivacyPolicyEvent)="togglePrivacyPolicy()"></app-contact>
+    <app-footer (toggleLegalNoticeEvent)="toggleLegalNotice()"></app-footer>
+    <app-privacy-policy *ngIf="showPrivacyPolicy" (closeEvent)="togglePrivacyPolicy()"></app-privacy-policy>
+    <app-legal-notice *ngIf="showLegalNotice" (closeEvent)="toggleLegalNotice()"></app-legal-notice>    
+    
+</div>
+    
+</div>

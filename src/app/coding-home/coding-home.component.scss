@@ -1,0 +1,206 @@
+@import './../../styles.scss';
+
+.home-frame {
+    position: relative;
+    width: 100vw;
+    max-width: 1440px;
+    height: 100vh;
+    @include dFlex($jc: space-between);
+    scroll-margin-top: 80px;
+
+    @media (max-width:800px) {
+        justify-content: center;
+    }
+}
+
+.headline-outside {
+    @include dFlex();
+    flex: 1; //takes all open space
+    position: relative;
+    padding-top: 80px;
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFCF3;
+    z-index: 4;
+
+}
+
+.in-head-frame {
+    @include dFlex();
+    width: fit-content;
+    z-index: 4;
+}
+
+.headline {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 2vw;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 8.89vw;
+    letter-spacing: -2.5%;
+    text-align: center;
+
+    &:hover {
+        @include colorChange();
+    }
+
+    @media (max-width:1440px) {
+        height: fit-content;
+        font-size: 8.89vw; // 
+        line-height: 8.89vw;
+        margin-top: 10%;
+    }
+}
+
+.line-name-frame {
+    @include dFlex($fd: row, $jc: flex-end);
+    width: 100%;
+    max-width: 100%;
+
+    @media (max-width:1440px) {
+        width: 100%;
+        margin-bottom: 2vw;
+    }
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-left: 5%;
+    margin-right: 10px;
+}
+
+.name {
+    font-family: 'Overpass', sans-serif;
+    width: auto;
+    margin-bottom: 0px;
+    margin-right: 32px;
+    font-weight: 700;
+    font-size: 3.33vw;
+    line-height: 3.33vw;
+    letter-spacing: -2.5%;
+    text-align: center;
+    color: #FF9900;
+    white-space: nowrap;
+}
+
+.brand-arrow-frame {
+    @include dFlex($jc: space-between, $fd: row);
+    width: 100%;
+    align-self: flex-end;
+    padding-bottom: 20px;
+
+    div {
+        max-height: min-content;
+    }
+}
+
+.brand {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    white-space: nowrap;
+    position: relative;
+    top: 16px;
+    left: -32px !important;
+
+    @media (min-width:1440px) {
+        font-size: 0.8rem;
+    }
+
+    @media (max-width:1440px) {
+        left: 0 !important;
+    }
+
+    @media (max-width:375px) {
+        font-size: 0.6rem;
+        left: -32px;
+    }
+}
+
+.img-text-frame {
+    @include dFlex();
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 32px;
+}
+
+.blank {
+    width: 100%;
+    height: 148px;
+    z-index: 3;
+    background-color: #FFFCF3;
+}
+
+.text {
+    width: 60px;
+    height: 100px;
+    z-index: 4;
+    background-color: #FFFCF3;
+    text-align: center;
+}
+
+.arrow-down {
+    @include dFlex();
+    position: relative;
+    height: 100px;
+}
+
+.arrow-down img {
+    @media (max-width:375px) {
+        width: auto;
+        height: 128px;
+    }
+
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(10%);
+    animation: moveDown 4s linear infinite;
+}
+
+.move {
+    animation: moveDown 4s linear infinite;
+}
+
+.no-move {
+    top: -64px;
+    animation: none;
+}
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        top: -200%;
+    }
+
+    2% {
+        opacity: 0.3;
+    }
+
+    4% {
+        opacity: 0.5;
+    }
+
+    8% {
+        opacity: 0.9;
+        top: -195%;
+    }
+
+    10% {
+        opacity: 1;
+        top: -190%;
+    }
+
+    97% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.3;
+        top: 40%;
+    }
+}

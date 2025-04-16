@@ -1,0 +1,188 @@
+@import './../../styles.scss';
+
+.contact-frame {
+    width: 100vw;
+    height: auto;
+}
+
+.subtitle {
+    @include subTitle($ta: left);
+    width: 100%;
+    max-width: 1440px;
+    margin-bottom: 32px;
+    color: white;
+
+    div {
+        width: fit-content;
+        margin-left: 8vw;
+    }
+}
+
+.quest {
+    font-size: 2.2vw; //32px;
+    margin-bottom: 16px;
+
+    @media (max-width:600px) {
+        font-size: 16px;
+    }
+}
+
+.hello {
+    font-size: 1.6vw;
+    margin-bottom: 12px 0 32px 0;
+
+    @media (max-width:600px) {
+        font-size: 14px;
+    }
+
+    @media (max-width:420px) {
+        margin: 0 32px 12px 32px;
+    }
+}
+
+.form-frame {
+    @include dFlex($jc: flex-start);
+    width: 100%;
+    background-color: black;
+    padding-bottom: 32px;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+.contact-form {
+    @include dFlex();
+    width: 40vw;
+
+    button {
+        background-color: black;
+        border: 1px solid rgb(55 55 55);
+        color: rgb(202, 202, 202);
+        padding: 4px;
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .sendBtn {
+        width: 120px !important;
+        height: 32px !important;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    @media (max-width:800px) {
+        width: 80%;
+    }
+}
+
+textarea,
+input {
+    width: 100%;
+    font-weight: 800;
+    line-height: 3vw;
+    padding: 4px;
+    color: white;
+    background-color: black !important;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+}
+
+.message {
+    height: 300px;
+}
+
+.checkbox-frame {
+    display: flex;
+    width: 100%;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+
+    #checkbox {
+        width: min-content;
+
+        @media (max-width:600px) {
+            width: 24px;
+        }
+    }
+
+    p {
+        width: fit-content;
+        font-size: 12px;
+        line-height: 11px;
+        text-align: left;
+        padding-left: 12px;
+        margin-bottom: 0;
+    }
+
+    button {
+        text-decoration: none;
+        color: #FF9900;
+        border: none;
+        font-size: 12px;
+        line-height: 11px;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.black-snackbar {
+    color: black !important;
+    background-color: #FFFCF3 !important;
+}
+
+.error-message {
+    color: #FF9900;
+    font-size: 1rem;
+}
+
+.arrow-frame {
+    position: relative;
+    bottom: 15px;
+    right: -40%;
+    cursor: pointer;
+    text-decoration: none;
+
+    @media (max-width:375px) {
+        right: -35%;
+        bottom: 0;
+    }    
+}
+
+.arrow-up {
+    &:hover {
+        animation: upAndDown 1s infinite forwards;
+        animation-play-state: running;
+    }
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateY(-32px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.legal-note{
+    p{
+        margin-right: 5vw !important;
+    }
+}

@@ -1,0 +1,28 @@
+<div class="my-skills-frame" id="mySkills">
+    <div class="sub-title">
+        My skills
+    </div>
+    <div class="skills-frame">
+        <div class="img-frame">
+            <img 
+                [ngClass]="{ 'grow': isGrowing(index) }" 
+                *ngFor="let image of images; 
+                let index = index" 
+                (click)="openPopup(image.name, $event)" 
+                [src]="image.src" alt=""
+            >             
+            
+            <div 
+            *ngFor="let popup of popups" 
+            class="popup" 
+            [style.left]="popup.positionX" 
+            [style.top]="popup.positionY">{{popup.content}}
+            </div>
+        </div>
+    </div>
+<a href="#portfolio">
+    <div>
+        <img class="arrow-right-down" src="assets/icons/arrow-right-pic.png" alt="">
+    </div>
+</a>
+</div>

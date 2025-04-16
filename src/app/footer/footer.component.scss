@@ -1,0 +1,105 @@
+@import './../../styles.scss';
+
+.footer-frame {
+    @include dFlex($fd: row-reverse, $jc: space-between);
+    width: 100%;
+    max-width: 1440px;
+
+    @media (max-width: 490px) {
+        @include dFlex();
+    }
+
+}
+
+.footer-legal-combi {
+    @include dFlex();
+    background-color: black;
+    width: 100vw;
+}
+
+#xing {
+    @include dFlex();
+
+    img {
+        width: auto;
+        height: 32px;
+    }
+}
+
+.logo-brand-frame {
+    @include dFlex($fd: column, $ai: flex-start);
+    margin-left: 32px;
+    width: 100%;
+    color: white;
+
+    @media (max-width: 490px) {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 12px;
+        height: 8vw;
+        max-height: 60px;
+    }
+}
+
+.brand {
+    padding-left: 32px;
+}
+
+.link-frame {
+    @include dFlex($fd: row, $ai: baseline, $jc: space-between);
+    color: white;
+    max-width: 250px;
+    width: 50%;
+    margin-right: 4vw;
+    gap: 1em;
+
+    a {
+        @include dFlex();
+        padding: 4px;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+
+        img {
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 490px) {
+        margin-right: 0;
+        justify-content: center;
+        gap: 3em;
+    }
+}
+
+.legalNote {
+    width: 100%;
+    max-width: 1440px;
+    background-color: black;
+    @include dFlex($ai: end);    
+    
+    p {
+        text-decoration: none;
+        margin-right: 4vw;
+        color: white;
+        white-space: no-wrap;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    @media (max-width: 490px) { 
+        padding-top: 12px;      
+        align-items: center; 
+        
+        p {            
+            margin-right: 0;
+        }
+    }
+}

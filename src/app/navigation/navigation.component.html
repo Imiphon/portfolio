@@ -1,0 +1,53 @@
+<div class="nav-frame">
+    <div class="in-nav-frame">
+        <div class="nav-head">
+            <div><img class="logo" src="assets/images/favicon.png" alt=""></div>
+            <div class="links">
+                <div class="lang" (click)="changeLang('en')">english</div>
+                <div class="lang" (click)="changeLang('de')">deutsch</div>
+                <div class="lang" (click)="changeLang('fr')">français</div>
+            </div>
+            <div class="flags">
+                <div class="flag" (click)="changeLang('en')"><img src="assets/icons/icon-en.png" alt="flag"></div>
+                <div class="flag" (click)="changeLang('de')"><img src="assets/icons/icon-de.png" alt="flag"></div>
+                <div class="flag" (click)="changeLang('fr')"><img src="assets/icons/icon-fr.png" alt="flag"></div>
+            </div>
+            <div class="close">
+                <button (click)="close()">
+                    <img src="assets/icons/x-mark-48.png" alt="close">
+                </button>
+            </div>
+        </div>
+
+        <div class="main-cont">
+            <div class="nav-cont">
+                <div class="link-frame">
+                    <div class="a-frame" (click)="close()"><a class="font" href="#aboutMe" id="aboutMe">About me</a></div>
+                    <div class="line-ani"></div>
+                </div>
+                <div class="link-frame">
+                    <div class="a-frame" (click)="close()"><a class="font" href="#mySkills" id="mySkills">My skills</a></div>
+                    <div class="line-ani"></div>
+                </div>
+                <div class="link-frame">
+                    <div class="a-frame" (click)="close()"><a class="font" href="#portfolio" id="portfolio">Portfolio</a></div>
+                    <div class="line-ani"></div>
+                </div>
+                <div class="link-frame">
+                    <div class="a-frame" (click)="close()"><a class="font" href="#contactFrame" id="contact">Contact</a></div>
+                    <div class="line-ani"></div>
+                </div>
+                <div class="link-frame">
+                    <div class="a-frame" (click)="close()"><a class="font" href="https://mensching.online/" id="start">Start</a></div>
+                    <div class="line-ani"></div>
+                </div>
+                <div class="link-frame">
+                    <div class="font" id="pp" (click)="togglePrivacyPolicy()">Privacy policy</div>
+                    <div class="line-ani"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="triangle"> </div>    
+</div>

@@ -1,0 +1,270 @@
+@import "./../../styles.scss";
+
+.nav-frame {
+  @include dFlex();
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffcf3;
+  z-index: 30;
+
+  @media (max-width: 375px) {
+    height: -webkit-fill-available;
+    overflow: auto;
+  }
+}
+
+.in-nav-frame {
+  @include dFlex();
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  background-color: #fffcf3;
+}
+
+.nav-cont {
+    width: 80%;
+    flex: 1;
+    overflow-y: auto;
+  @include dFlex($jc: space-between);
+  @media (max-width: 540px) {
+    padding: 16px;
+  }
+}
+
+.nav-head {
+//   position: relative;
+//   top: 0;
+//   left: 0;
+  width: 100%;
+  max-width: 1140px;
+  height: 80px;
+  margin-top: 12px;
+  @include dFlex($fd: row, $jc: space-between);
+}
+
+.close {
+  @include dFlex($ai: flex-end);
+  height: auto;
+  position: relative;
+  margin-right: 32px;
+}
+
+button {
+  @include closeBtn();
+  top: 0;
+}
+
+.text {
+  @include dFlex($jc: space-between);
+  position: relative;
+  height: 86%;
+}
+
+.logo {
+  width: auto;
+  height: 40px;
+  padding-left: 32px;
+}
+
+.links {
+  @include dFlex($fd: row, $jc: space-between);
+  width: 50%;
+
+  @media (max-width: 420px) {
+    display: none;
+  }
+}
+
+.flags {
+  @media (max-width: 420px) {
+    @include dFlex($fd: row, $jc: space-between);
+    width: 40%;
+  }
+}
+
+.flag img {
+  display: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 420px) {
+    @include dFlex($fd: row, $jc: space-between);
+    height: 24px;
+    gap: 4px;
+  }
+}
+
+.lang {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.main-cont {
+  @include dFlex();
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+  line-height: 8.4vw;
+  overflow: hidden;
+
+  @media (min-width: 1440px) {
+    position: relative;
+    top: 3%;
+  }
+
+  @media (max-width: 1440px) {
+    justify-content: center !important;
+  }
+}
+
+.font {
+  position: relative;
+  bottom: -10px;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  bottom: -16px;
+  padding-left: 32px;
+
+  @media (min-width: 1141px) {
+    line-height: 80px;
+    font-size: max(60px, 4vw);
+  }
+
+  @media (max-width: 1140px) {
+    margin-left: 4px;
+    bottom: -10px;
+    padding-left: 8px;
+  }
+
+  @media (max-width: 900px) {
+    bottom: -7px;
+    font-size: max(32px, 6vw);
+  }
+
+  @media (max-width: 420px) {
+    line-height: 1;
+    bottom: -2px;
+    white-space: wrap;
+  }
+
+  &:hover {
+    @include colorChange();
+    cursor: pointer;
+  }
+}
+
+.a-frame {
+  @include dFlex();
+  width: 100%;
+}
+
+#pp {
+  white-space: nowrap;
+  width: 100%;
+  @media (max-width: 420px) {
+    white-space: wrap;
+  }
+}
+
+.link-frame {
+  @include subTitle();
+  @include dFlex($ai: baseline);
+  position: relative;
+  width: 98%;
+  @media (max-width: 1440px) {
+    min-height: 120px;
+  }
+  @media (max-width: 420px) {
+    height: 80px;
+  }
+}
+
+.link-frame:hover .line-ani {
+  cursor: pointer;
+  width: calc(100% + 4px);
+  animation: movin-border 0.5s linear forwards;
+}
+
+.line-ani {
+  min-height: 32px;
+  width: 32px;
+  border-bottom: 4px solid black;
+  border-left: 4px solid black;
+  position: relative;
+  left: -4px;
+  transition: width 0.5s linear;
+
+  @media (max-width: 900px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 420px) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.flagImg {
+  width: 32px;
+  height: auto;
+  margin-left: 12px;
+}
+
+@keyframes movin-border {
+  0% {
+    width: 32px;
+  }
+
+  100% {
+    width: calc(100% + 4px);
+  }
+}
+
+.highlight-orange {
+  animation: orangeFlash 2s;
+  transition: color;
+}
+
+@keyframes orangeFlash {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #ff9900;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.triangle {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 15vw;
+  background-image: linear-gradient(to bottom left, transparent 50%, black 50%);
+}
+
+.triangle-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: black;
+}

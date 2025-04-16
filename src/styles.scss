@@ -1,0 +1,103 @@
+@import './font-styles.scss';
+
+html {
+    overflow: auto;
+    scrollbar-width: none;
+    /* Für Firefox */
+    background-color: #FFFCF3;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+    /* Für Webkit-Browser */
+}
+
+body {
+    background-color: #FFFCF3;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+    scrollbar-width: none !important;
+    scroll-behavior: smooth;
+}
+
+p,
+span {
+    font-family: 'Overpass', sans-serif;
+}
+
+.orange {
+    color: #FF9900;
+}
+
+@mixin subTitle($ta: center) {
+    //width: 100%;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 5.42vw; // font-size:78px for .main-frame.width: 1440px in vw
+    line-height: 5.42vw;
+    letter-spacing: 1%;
+    text-align: $ta;
+
+    @media (max-width:1440px) {
+        font-size: 5.42vw;
+        line-height: 5.42vw;
+    }
+
+    @media (max-width:375px) {
+        font-size: 11vw;
+        text-align: center;
+        padding: 0;
+    }
+
+    @include colorChange();
+}
+
+@mixin colorChange() {
+    transition: color 0.7s;
+
+    &:hover {
+        color: #FF9900;
+    }
+}
+
+@mixin dFlex($jc: center, $ai: center, $fd: column, $dp: flex) {
+    display: $dp;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+.arrow-left-down,
+.arrow-right-down {
+    width: 12vw; // 116px;
+
+    @media (max-width:375px) {
+        width: 42vw; // 168px;
+    }
+}
+
+@mixin closeBtn() {
+    position: relative;
+    top: 12px;
+    right: 12px;
+    border: none;
+    background-color: unset;
+    opacity: 0.8;
+
+    img {
+        width: 32px;
+        height: auto;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}

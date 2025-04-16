@@ -1,0 +1,59 @@
+<div class="contact-frame" id="contactFrame">
+    <!--<div class="triangle" id="helloContact" >-->
+        <div id="helloContact"></div>
+    </div>
+    <div class="form-frame">
+        <div class="subtitle">
+            <div>Say Hi!</div>
+        </div>
+        <p class="quest orange" [innerHTML]="contactOrange"></p>
+        <p class="hello" [innerHTML]="contactHello"></p>
+
+        <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
+            <div>
+                <input placeholder="Your name" name="name" [(ngModel)]="contactData.name" required #nameField="ngModel" autocomplete="name">
+                <div *ngIf="nameField.invalid && nameField.touched" class="error-message">
+                    Name is required.
+                </div>
+            </div>
+            <br>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Your eMail" ngModel #emailField="ngModel"
+                    [(ngModel)]="contactData.email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required autocomplete="email">
+                <div *ngIf="emailField.invalid && emailField.touched" class="error-message">
+                    Please enter a valid email.
+                </div>
+            </div>
+            <br>
+            <div>
+                <textarea class="message" cols="20" rows="3" name="message" id="message" placeholder="Your message"
+                    ngModel [(ngModel)]="contactData.message" required #messageField="ngModel"></textarea>
+                <div *ngIf="messageField.invalid && messageField.touched" class="error-message">
+                    Please enter a message.
+                </div>
+
+            </div>
+            <br>
+            <div class="checkbox-frame">
+                <input type="checkbox" name="privacy" id="checkbox" [(ngModel)]="contactData.privacy" required
+                    #privacyField="ngModel">
+                <p>
+                    <span [innerHTML]="bText1"></span>
+                    <button (click)="togglePrivacyPolicy()" type="button"><span [innerHTML]="bText2"></span> </button>
+                     <span [innerHTML]="bText3"></span> 
+                </p> 
+                <div *ngIf="privacyField.invalid && privacyField.touched" class="error-message">
+                    You must agree to the privacy policy.
+                </div>
+                
+            </div>
+            <br>
+            <button class="sendBtn" [innerHTML]="sendBtn" type="submit" value="Send Message"></button>
+        </form>
+        <a class="arrow-frame" href="#home">
+            <div class="arrow-up"><img src="assets/icons/arrow-white-up.png" alt=""></div>
+            <p>scoll<br>up</p>
+        </a>
+
+    </div>
+

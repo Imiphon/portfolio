@@ -1,0 +1,41 @@
+@import './../../styles.scss';
+
+.legal-note-frame {
+    @include dFlex();
+    scroll-margin-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+}
+
+.legal-notice {
+    width: 70%;
+    height:fit-content;
+    max-height: 50%;
+    padding: 60px; 
+    background-color: #FFFCF3;
+    overflow-y: auto;
+    @media (max-width: 540px) {
+        padding: 16px;
+    }
+}
+
+button {
+    @include closeBtn();
+}
+
+.close {
+    @include dFlex($ai: flex-end);
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.text {
+    position: relative;
+    height: -webkit-fill-available;
+}
