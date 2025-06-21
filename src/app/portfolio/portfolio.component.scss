@@ -161,8 +161,8 @@
                 visibility: visible;
                 animation: 0.8s turnArrowR cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
             }
-            .desc-l,
-            .desc-r{ opacity: 1;}
+            // .desc-l,
+            // .desc-r{ opacity: 1;}
         }
     }
 }
@@ -187,9 +187,9 @@
 .desc-r {
     margin: 12px 0 0 32px;
     text-align: right;
-    @media (min-width:1140px) {
-        opacity: 0;
-    }
+    // @media (min-width:1140px) {
+    //     opacity: 0;
+    // }
     @media (max-width:740px) {
         text-align: left;
         margin: 12px 0;
@@ -198,9 +198,9 @@
 
 .desc-l {
     margin-top: 12px;
-    @media (min-width:1140px) {
-        opacity: 0;
-    }
+    // @media (min-width:1140px) {
+    //     opacity: 0;
+    // }
 }
 
 

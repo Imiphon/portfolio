@@ -12,7 +12,8 @@
     "portfolioJoin": "A Kanban-style application for creating and organizing tasks with the ability to add new contacts. Users can create their own accounts, which are stored in the backend.",
     "portfolioPollo": "An object-oriented game app developed in HTML5 Canvas that supports smooth animations. Playable via keyboard or touchscreen.",
     "portfolioUsePopcorn": "This react-app imports data from an API and displays it individually. Storage in Local Storage is possible.",
-    "portfolioCardgame": "A small card game using Angular and Firebase, demonstrating synchronous data transmission between various end-users."
+    "portfolioCardgame": "A small card game using Angular and Firebase, demonstrating synchronous data transmission between various end-users.",
+    "portfolioZauberkette": "Concept, game design, and full programming realized independently in Vanilla JavaScript. This educational card game project highlights my ability to develop creative learning tools and my passion for combining technology and education."
   },
   "de": {
     "aboutMe": "<p>Willkommen auf meiner (mit Angular erstellten) Website. Als Junior Frontend-Developer, Musikproduzent und passionierter Spieleentwickler, habe ich in meinem Leben bereits umfangreiche Erfahrungen bei der Umsetzung von IT-Projekten gesammelt. Diese reicht von der Arbeit mit Werbeagenturen über diverse Multimediaprojekte, bis hin zur Entwicklung von Lernspielen und vielem mehr. Ich freue mich, hier meine digitalen Fähigkeiten anbieten zu können und bin für Projekte sowohl in Deutschland als auch in Kanada verfügbar.</p>",
@@ -26,7 +27,8 @@
     "portfolioJoin": "Eine Kanban-Style-Anwendung zum Erstellen und Organisieren von Aufgaben mit der Möglichkeit, neue Kontakte hinzuzufügen. Nutzer können eigene Accounts anlegen, die im Backend gespeichert werden.",
     "portfolioPollo": "Eine objektorientierte Game-App in HTML5-Canvas entwickelt, die flüssige Animationen unterstützt. Spielbar über Tastatur oder Touchscreen.",
     "portfolioUsePopcorn": "Diese React-App importiert Daten von einer API und stellt sie individuell dar. Speicherungen im  Local Storage sind möglich.",
-    "portfolioCardgame": "Ein kleines Kartenspiel mit Angular und Firebase, zur Demonstration synchroner Datenübertragung zwischen verschiedenen Endnutzern."
+    "portfolioCardgame": "Ein kleines Kartenspiel mit Angular und Firebase, zur Demonstration synchroner Datenübertragung zwischen verschiedenen Endnutzern.",
+    "portfolioZauberkette": "Konzept, Spieldesign und vollständige Programmierung eigenständig in Vanilla JavaScript realisiert. Dieses edukative Kartenspiel-Projekt unterstreicht meine Fähigkeit, kreative Lernwerkzeuge zu entwickeln, sowie meine Leidenschaft, Technologie mit Bildung zu verbinden."
   },
   "fr": {
     "aboutMe": "<p>Bienvenue sur mon site web (créé avec Angular). En tant que développeur frontend junior, producteur de musique et développeur de jeux passionné, j'ai déjà acquis une expérience considérable dans la mise en œuvre de projets informatiques dans ma vie. Cela va du travail avec des agences de publicité à divers projets multimédias, jusqu'au développement de jeux éducatifs et bien plus encore. Je suis ravi de pouvoir offrir mes compétences numériques ici et je suis disponible pour des projets en Allemagne comme au Canada.</p>",
@@ -41,6 +43,7 @@
     "portfolioJoin": "Une application de style Kanban pour créer et organiser des tâches avec la possibilité d'ajouter de nouveaux contacts. Les utilisateurs peuvent créer leurs propres comptes, qui sont stockés dans le backend.",
     "portfolioPollo": "Une application de jeu orientée objet développée en HTML5 Canvas qui prend en charge des animations fluides. Jouable via clavier ou écran tactile.",
     "portfolioUsePopcorn": "Cette react-application importe des données d'une API et les affiche individuellement. Le stockage dans le Local Storage est possible.",
-    "portfolioCardgame": "Un petit jeu de cartes utilisant Angular et Firebase, pour démontrer la transmission de données synchrones entre différents utilisateurs finaux."
+    "portfolioCardgame": "Un petit jeu de cartes utilisant Angular et Firebase, pour démontrer la transmission de données synchrones entre différents utilisateurs finaux.",
+    "portfolioZauberkette": "Concept, game design et programmation complète réalisés de manière autonome en JavaScript pur. Ce projet de jeu de cartes éducatif met en valeur ma capacité à développer des outils d’apprentissage créatifs ainsi que ma passion pour la combinaison de technologie et d’éducation."
   }
 }

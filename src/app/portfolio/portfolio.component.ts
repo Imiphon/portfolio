@@ -18,6 +18,7 @@ export class PortfolioComponent implements OnInit {
   portfolioPollo: string = '';
   portfolioUsePopcorn: string = '';
   portfolioCardgame: string = '';
+  portfolioZauberkette: string = '';
   showColored: boolean = false;
   isIOS:boolean = false; 
   constructor(private languageService: LanguageService, private http: HttpClient, private iosChecker: IosCheckerService) {
@@ -40,6 +41,7 @@ export class PortfolioComponent implements OnInit {
       this.portfolioPollo = data[lang]['portfolioPollo'];
       this.portfolioUsePopcorn = data[lang]['portfolioUsePopcorn'];      
       this.portfolioCardgame = data[lang]['portfolioCardgame'];
+      this.portfolioZauberkette = data[lang]['portfolioZauberkette'];
     });
   }
 }
