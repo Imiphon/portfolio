@@ -28,6 +28,7 @@
 .in-head-frame {
     @include dFlex();
     width: fit-content;
+    align-items: stretch;
     z-index: 4;
 }
 
@@ -38,7 +39,7 @@
     font-family: 'Syne', sans-serif;
     font-weight: 800;
     font-size: 128px;
-    line-height: 8.89vw;
+    line-height: 7.5vw;
     letter-spacing: -2.5%;
     text-align: center;
 
@@ -49,15 +50,21 @@
     @media (max-width:1440px) {
         height: fit-content;
         font-size: 8.89vw; // 
-        line-height: 8.89vw;
+        line-height: 7.5vw;
         margin-top: 10%;
     }
+}
+
+.headline-line-two {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.54em;
 }
 
 .line-name-frame {
     @include dFlex($fd: row, $jc: flex-end);
     width: 100%;
-    max-width: 100%;
+    min-width: 100%;
 
     @media (max-width:1440px) {
         width: 100%;
@@ -69,7 +76,7 @@
     width: 100%;
     height: 2px;
     background-color: black;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-right: 10px;
 }
 
@@ -77,7 +84,7 @@
     font-family: 'Overpass', sans-serif;
     width: auto;
     margin-bottom: 0px;
-    margin-right: 32px;
+    margin-right: 2%;
     font-weight: 700;
     font-size: 3.33vw;
     line-height: 3.33vw;

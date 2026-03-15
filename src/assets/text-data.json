@@ -1,6 +1,6 @@
 {
   "en": {
-    "aboutMe": "<p>Welcome to my website (created with Angular). As a Junior Frontend Developer, music producer, and passionate game developer, I have already gathered extensive experience in implementing IT projects in my life. This ranges from working with advertising agencies through various multimedia projects to developing educational games and much more. I am excited to offer my digital skills here and I am available for projects in both Germany and Canada.</p>",
+    "aboutMe": "<p>Welcome to my website.</p><p>I work at the intersection of project organization, media production, and digital development. Throughout my professional career, I have delivered projects in different fields, ranging from artistic productions and educational initiatives to the development of digital applications.</p><p>A central focus of my work is turning ideas into functioning systems and guiding projects in a structured way from concept to implementation.</p><p>This website presents examples of my work in web development and digital project development, including applications and prototypes from Melopoiia, the learning system I conceived.</p>",
     "contactOrange": "Want to discuss a new project?",
     "contactHello": "Say hello! Let's discuss your ideas and make it happen.",
     "bText1": "I've read the",
@@ -13,10 +13,13 @@
     "portfolioPollo": "An object-oriented game app developed in HTML5 Canvas that supports smooth animations. Playable via keyboard or touchscreen.",
     "portfolioUsePopcorn": "This react-app imports data from an API and displays it individually. Storage in Local Storage is possible.",
     "portfolioCardgame": "A small card game using Angular and Firebase, demonstrating synchronous data transmission between various end-users.",
-    "portfolioMelopoiia": "A selection of music learning games."
+    "portfolioMelopoiia": "Melopoiia is a music learning system I conceived that connects playful mechanics with music-pedagogical learning goals.<br><br>It includes, among other things, applications for learning notes, ear and improvisation exercises, tools for creating homework, creative role-play formats, and more. The focus is not only on technical implementation, but above all on didactic concept development, learning motivation, and the creation of interactive access points to musical knowledge.",
+    "portfolioLearningProjectsLead": "Learning projects from my training and further education. ",
+    "portfolioLearningProjectsBody": "These projects were created during my training and continuing education in web development. They reflect individual learning steps and technical exercises, but are not the core of my current profile.",
+    "portfolioOpenProject": "Open project"
   },
   "de": {
-    "aboutMe": "<p>Willkommen auf meiner (mit Angular erstellten) Website. Als Junior Frontend-Developer, Musikproduzent und passionierter Spieleentwickler, habe ich in meinem Leben bereits umfangreiche Erfahrungen bei der Umsetzung von IT-Projekten gesammelt. Diese reicht von der Arbeit mit Werbeagenturen über diverse Multimediaprojekte, bis hin zur Entwicklung von Lernspielen und vielem mehr. Ich freue mich, hier meine digitalen Fähigkeiten anbieten zu können und bin für Projekte sowohl in Deutschland als auch in Kanada verfügbar.</p>",
+    "aboutMe": "<p>Willkommen auf meiner Website.</p><p>Ich arbeite an der Schnittstelle von Projektorganisation, Medienproduktion und digitaler Entwicklung. In meiner beruflichen Laufbahn habe ich Projekte in unterschiedlichen Bereichen umgesetzt – von künstlerischen Produktionen über Bildungsprojekte bis hin zur Entwicklung digitaler Anwendungen.</p><p>Ein Schwerpunkt meiner Arbeit liegt darin, Ideen in funktionierende Systeme zu überführen und Projekte strukturiert von der Konzeption bis zur Umsetzung zu begleiten.</p><p>Diese Website zeigt Beispiele aus meiner Arbeit im Bereich Webentwicklung und digitaler Projektentwicklung – darunter unter anderem Anwendungen und Prototypen aus dem von mir konzipierten Lernsystem Melopoiia.</p>",
     "contactOrange": "Interesse an einem neuen Projekt?",
     "contactHello": "Ich beantworte gerne weitere Fragen.",
     "bText1": "Ich habe die",
@@ -28,10 +31,13 @@
     "portfolioPollo": "Eine objektorientierte Game-App in HTML5-Canvas entwickelt, die flüssige Animationen unterstützt. Spielbar über Tastatur oder Touchscreen.",
     "portfolioUsePopcorn": "Diese React-App importiert Daten von einer API und stellt sie individuell dar. Speicherungen im  Local Storage sind möglich.",
     "portfolioCardgame": "Ein kleines Kartenspiel mit Angular und Firebase, zur Demonstration synchroner Datenübertragung zwischen verschiedenen Endnutzern.",
-    "portfolioMelopoiia": "Eine Auswahl an Musiklernspielen."
+    "portfolioMelopoiia": "Melopoiia ist ein von mir konzipiertes musikalisches Lernsystem, das Spielmechaniken mit musikpädagogischen Lernzielen verbindet.<br><br>Dazu gehören u. a. Anwendungen zum Erlernen von Noten, Ton- und Improvisationsübungen, Möglichkeiten Hausaufgaben zu erstellen, kreative Rollen-Spiel-Formate und vieles mehr. Im Mittelpunkt stehen nicht nur technische Umsetzung, sondern vor allem didaktische Konzeption, Lernmotivation und die Entwicklung interaktiver Zugänge zu musikalischem Wissen.",
+    "portfolioLearningProjectsLead": "Lernprojekte aus meiner Aus- und Weiterbildungszeit. ",
+    "portfolioLearningProjectsBody": "Diese Projekte sind im Rahmen meiner Aus- und Weiterbildung im Bereich Webentwicklung entstanden. Sie zeigen einzelne Lernschritte und technische Übungen, stehen aber nicht im Zentrum meines heutigen Profils.",
+    "portfolioOpenProject": "Projekt öffnen"
   },
   "fr": {
-    "aboutMe": "<p>Bienvenue sur mon site web (créé avec Angular). En tant que développeur frontend junior, producteur de musique et développeur de jeux passionné, j'ai déjà acquis une expérience considérable dans la mise en œuvre de projets informatiques dans ma vie. Cela va du travail avec des agences de publicité à divers projets multimédias, jusqu'au développement de jeux éducatifs et bien plus encore. Je suis ravi de pouvoir offrir mes compétences numériques ici et je suis disponible pour des projets en Allemagne comme au Canada.</p>",
+    "aboutMe": "<p>Bienvenue sur mon site web.</p><p>Je travaille à l’intersection de l’organisation de projet, de la production médiatique et du développement numérique. Au cours de mon parcours professionnel, j’ai mené des projets dans différents domaines, allant de productions artistiques et de projets éducatifs jusqu’au développement d’applications numériques.</p><p>Un axe central de mon travail consiste à transformer des idées en systèmes fonctionnels et à accompagner les projets de manière structurée, de la conception à la mise en œuvre.</p><p>Ce site présente des exemples de mon travail en développement web et en développement de projets numériques, notamment des applications et des prototypes issus du système d’apprentissage Melopoiia, que j’ai conçu.</p>",
     "contactOrange": "Intéressé par un nouveau projet ?",
     "contactHello": "Je suis heureux de répondre à d'autres questions.",
     "bText1": "J'ai lu la",
@@ -44,6 +50,9 @@
     "portfolioPollo": "Une application de jeu orientée objet développée en HTML5 Canvas qui prend en charge des animations fluides. Jouable via clavier ou écran tactile.",
     "portfolioUsePopcorn": "Cette react-application importe des données d'une API et les affiche individuellement. Le stockage dans le Local Storage est possible.",
     "portfolioCardgame": "Un petit jeu de cartes utilisant Angular et Firebase, pour démontrer la transmission de données synchrones entre différents utilisateurs finaux.",
-    "portfolioMelopoiia": "Une sélection de jeux d'apprentissage musical."
+    "portfolioMelopoiia": "Melopoiia est un système d'apprentissage musical que j'ai conçu, reliant des mécaniques de jeu à des objectifs pédagogiques en musique.<br><br>Il comprend notamment des applications pour apprendre les notes, des exercices de tonalité et d'improvisation, des possibilités de créer des devoirs, des formats créatifs de jeu de rôle et bien plus encore. L'accent n'est pas mis uniquement sur la mise en œuvre technique, mais surtout sur la conception didactique, la motivation d'apprentissage et le développement d'accès interactifs au savoir musical.",
+    "portfolioLearningProjectsLead": "Projets d’apprentissage issus de ma formation initiale et continue. ",
+    "portfolioLearningProjectsBody": "Ces projets ont été réalisés dans le cadre de ma formation et de mon perfectionnement en développement web. Ils montrent différentes étapes d’apprentissage et exercices techniques, mais ne représentent pas le cœur de mon profil actuel.",
+    "portfolioOpenProject": "Ouvrir le projet"
   }
 }
